@@ -1,0 +1,442 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F7FBFE;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.center {
+    text-align: center;
+}
+
+.largerFont {
+    font-size: 1.70em;
+}
+
+.listItems {
+    list-style: none;
+    text-align: left;
+    margin: 15px 0 20px -20px;
+
+    font-size: 1.1125em;
+}
+/*****************************/
+
+
+/*****************************/
+/*** BUTTONS ***/
+.formButton {
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+
+    color: white;
+    font-weight: 700;
+    font-size: .95em;
+
+    border-radius: 20px;
+    background-color: rgb(255, 174, 0.911);
+    border-color: rgba(255, 255, 0, 0.571);
+    box-shadow: 0 5px 10px rgba(40, 94, 1, 0.727);
+
+    z-index: 2;
+}
+
+.formButton2 {
+    width: 200px;
+    text-align: center;
+    margin: -110px auto 60px auto;
+    padding: 5px;
+
+    color: white;
+    font-weight: 800;
+    font-size: 1.25em;
+
+    border-radius: 50px;
+    background-color: rgb(255, 174, 0.911);
+    border-color: rgba(255, 255, 0, 0.571);
+
+    box-shadow: 0 5px 10px rgba(40, 94, 1, 0.727);
+}
+.formButton2:hover, 
+.formButton2:focus,
+.formButton:hover,
+.formButton:focus {
+    outline: none;
+    background-color: rgb(86, 255, 1);
+    border-color: rgba(94, 255, 0, 0.53);
+    color: white;
+
+    box-shadow: 0 5px 10px rgba(40, 94, 1, 0.727);
+}
+/*****************************/
+
+/*****************************/
+/*** HOMEPAGE ***/
+.homepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.homepageHeader {
+    text-align: center;
+    margin: 10px 0 -10px 0;
+}
+.homepageH1 {
+    margin: 0 0 -5px 0;
+    border-left: 40px solid yellow;
+    border-right: 40px solid yellow;
+    border-top: dashed 10px yellow;
+    border-bottom: dashed 10px yellow;
+}
+.homepageH2 {
+    margin: 15px 0 20px 0;
+    padding: 5px 0;
+    border-bottom: solid 5px yellow;
+    border-top: dashed 5px yellow;
+}
+
+.homepageMain {
+    margin: 0 20px;
+    text-align: center;
+}
+.paragraph {
+    text-align: left;
+}
+.emphatic {
+    text-align: center;
+    padding: 10px 0;
+    border-top: solid 5px yellow;
+    border-bottom: dashed 5px yellow;
+    font-weight: 800;
+    font-size: 1.05em;
+}
+
+.homepageForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.formInput {
+    width: 55%;
+    margin: 10px;
+    z-index: 2;
+}
+
+
+.homepageIMG {
+    width: 80%;
+    margin: -75px 0 -10px 0;
+    align-self: center;
+    z-index: 1;
+}
+/*****************************/ 
+
+
+
+/****************************/
+/*** ADOPTION PAGE ***/
+.loadingMessage {
+    text-align: center;
+    font-weight: 800;
+    font-size: 2em;
+    color: orange;
+}
+
+.adoptionPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/*** ADOPTION PAGE HEADER ***/
+.adoptionHeader {
+    text-align: center;
+    margin: 10px 0 -10px 0;
+}
+.adoptionPageH1 {
+    margin: 0 0 -5px 0;
+    border-left: 40px solid yellow;
+    border-right: 40px solid yellow;
+    border-top: dashed 10px yellow;
+    border-bottom: dashed 10px yellow;
+}
+.adoptionPageH2 {
+    margin: 15px 0 20px 0;
+    padding: 5px 0;
+    border-bottom: solid 5px yellow;
+    border-top: dashed 5px yellow;
+}
+
+.secTitle {
+    text-align: center;
+    margin: 15px 0 20px 0;
+    padding: 10px 0;
+    border-top: solid 5px yellow;
+    border-bottom: dashed 5px yellow;
+    background-color: rgba(249, 253, 163, 0.829);
+}
+/*****************************/
+
+
+/*****************************/
+/*** PEOPLE QUEUE ***/
+.adoptMessage {
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.25em;
+    color: orange;
+
+    border-left: 50px solid yellow;
+    border-right: 50px solid yellow;
+}
+
+.emphasis {
+    margin: -25px 0 10px 0;
+    font-size: 1.35em;
+}
+
+.peopleList {
+    text-align: center;
+    list-style-position: inside;
+}
+
+.peopleListSection {
+    border-left: 50px solid yellow;
+    border-right: 50px solid yellow;
+}
+
+.peopleListItems {
+    margin-left: -15%;
+}
+
+
+/*** CATS QUEUE ***/
+.catList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.catIMG {
+    width: 120%;
+    border-bottom: solid 20px rgba(255, 255, 0, 0.598);
+    text-align: center;
+}
+
+/*** DOGS QUEUE ***/
+.dogList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.dogIMG {
+    width: 120%;
+    border-bottom: solid 20px rgba(255, 255, 0, 0.598);
+    text-align: center;
+}
+/*****************************/
+
+
+/*****************************/
+/** TABLET STYLES **/
+/*****************************/
+@media screen and (min-width: 768px) {
+
+     /*** HOMEPAGE ***/
+     .homepage {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 25px;
+        margin-bottom: -10px;
+    }
+
+    .homepageHeader {
+        text-align: center;
+        margin: 10px 0 5px 0;
+    }
+    .homepageH1 {
+        margin: -20px 0 -5px 0;
+        padding: 5px 0;
+        border-left: 40px solid yellow;
+        border-right: 40px solid yellow;
+        border-top: dashed 20px yellow;
+        border-bottom: dashed 10px yellow;
+    }
+    .homepageH2 {
+        margin: 15px 0 20px 0;
+        padding: 10px 0;
+        border-bottom: solid 5px yellow;
+        border-top: dashed 5px yellow;
+    }
+
+    .homepageMain {
+        margin: 0 25px;
+        display: flex;
+        /* flex-direction: column; */
+        flex-direction: row;
+        flex-wrap: wrap;
+        z-index: 2;
+    }
+    .paragraph {
+        flex-shrink: 0;
+        flex-basis: 50%;
+
+        padding: 0 30px 0 20px;
+
+        font-size: 1.25em;
+        text-align: left;
+    }
+    .emphatic {
+        flex-shrink: 0;
+        flex-basis: 50%;
+
+        text-align: center;
+        padding: 10% 0;
+        border-top: solid 5px yellow;
+        border-bottom: dashed 5px yellow;
+        font-weight: 800;
+        font-size: 1.45em;
+    }
+
+    .homepageForm {
+        flex-grow: 1;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .formInput {
+        width: 65%;
+        margin: 10px;
+        line-height: 1.55em;
+        z-index: 2;
+    }
+
+
+    .homepageIMG {
+        width: 95%;
+        margin: -150px 0 -5px 0;
+        align-self: center;
+        z-index: 1;
+    }
+    /*****************************/
+
+    /*** ADOPTION PAGE ***/
+
+    .adoptionPage {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .adoptionHeader {
+        margin-top: 20px;
+    }
+
+    .listItems {
+        list-style: none;
+        text-align: left;
+        margin: 10px 20px 0 0;
+        padding: 50px 0 0 20px;
+    
+        font-size: 1.25em;
+    }
+
+    .adoptMessage {    
+        border-left: 100px solid yellow;
+        border-right: 100px solid yellow;
+    }
+    .emphasis {
+        font-size: 2em;
+    }
+
+    .peopleList {
+        font-size: 1.25em;;
+    }
+
+    .peopleListSection {
+        border-left: 100px solid yellow;
+        border-right: 100px solid yellow;
+    }
+    
+    .peopleListItems {
+        margin-left: -10%;
+    }
+
+    .catList {
+        flex-direction: row;
+        justify-content: left;
+        margin: 20px 0 0 0;
+    }
+    .catIMG {
+        width: 50%;
+        text-align: left;
+        border-right: solid 20px rgba(255, 255, 0, 0.598);
+    }
+    .dogList {
+        flex-direction: row;
+        justify-content: left;
+        margin: 0;
+    }
+    .dogIMG {
+        width: 50%;
+        text-align: left;
+        border-right: solid 20px rgba(255, 255, 0, 0.598);
+    }
+
+    .formButton2 {
+        width: 200px;
+        margin: auto 95px auto -300px;
+    }
+}
+/*****************************/
+
+
+/*****************************/
+/** DESKTOP / LAPTOP STYLES **/
+@media screen and (min-width: 1024px) {
+
+    .adoptionPageH1 {
+        margin: 0 0 -5px 0;
+        border-left: 200px solid yellow;
+        border-right: 200px solid yellow;
+        border-top: dashed 10px yellow;
+        border-bottom: dashed 10px yellow;
+    }
+    .adoptMessage {    
+        border-left: 200px solid yellow;
+        border-right: 200px solid yellow;
+    }
+
+    .peopleListSection {
+        border-left: 200px solid yellow;
+        border-right: 200px solid yellow;
+    }
+
+    .secTitle {
+        font-size: 2em;
+    }
+
+    .listItems {  
+        font-size: 1.5em;
+    }
+
+    .formButton2 {
+        /* width: 200px; */
+        margin: auto 185px auto -370px;
+    }
+}
+/*****************************/
