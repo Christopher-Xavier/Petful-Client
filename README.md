@@ -1,19 +1,22 @@
 
-FULLSTACK APP, implemented BY Christopher-Xavier involving NODE.JS, EXPRESS, REACT, POSTGRESQL,
+##FULLSTACK APP, implemented BY Christopher-Xavier involving NODE.JS, EXPRESS, REACT, POSTGRESQL,
 
 User stories
-USER STORY #1:
+
+##USER STORY #1:
 As a pet lover, I want to visit the FIFO pet adoption site 
 so that I can get more information about the adoption process.
 
-Acceptance criteria
+##Acceptance criteria
 
 When I go to the FIFO adoption agency site
 
 * I see a description of the adoption process.
 * I see a meaningful picture related to the description.
 * I see a button for starting the adoption process.
-USER STORY #2:
+
+##USER STORY #2:
+
 As a user interested in adopting pets, I want to get more information 
 on each pet so that I can make an informed decision about who to adopt.
 
@@ -25,7 +28,8 @@ When I visit the adoption page, I can see:
 * A physical description of the pet;
 * The pet's name, gender, age, and breed.
 * A story of the pet's journey to the shelter
-USER STORY #3:
+
+##USER STORY #3:
 As a user interested in adopting pets, 
 I want to see the pets that I can adopt.
 
@@ -33,7 +37,8 @@ Acceptance criteria
 
 When I visit the adoption page, I can only see the 
 pet that is next in line to be adopted.
-USER STORY #4:
+
+##USER STORY #4:
 As a user interested in adopting pets, I want to get in line to adopt.
 
 Acceptance criteria
@@ -43,8 +48,7 @@ When I visit the adoption page:
 * I can see a list of other people currently in line.
 * I can submit my name and be added to the end of the line.
 * When I am not at the beginning of the line, I cannot see an option to adopt a pet.
-* For demo purposes: Once I join the line, I can see other pets being adopted until I am at the front of the line.
-    * Every five seconds, the user at the front of the line should be removed from the line and one of the pets up for adoption should disappear.
+* For demo purposes: Once I join the line, I can see other pets being adopted until I am at the front of the line.    * Every five seconds, the user at the front of the line should be removed from the line and one of the pets up for adoption should disappear.
     * When I am at the front of the line, a new user should be added to the line behind me every five seconds until there are a total of five users in line.
 USER STORY #5:
 As a user interested in adopting pets, I want to adopt a pet.
