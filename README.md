@@ -1,5 +1,4 @@
-
-####PETFUL-SHOP-CLIENT####
+###PETFUL-SHOP-CLIENT####
 
 
 ##FULLSTACK APP, implemented BY Christopher-Xavier involving NODE.JS, EXPRESS, REACT, POSTGRESQL,
@@ -53,7 +52,11 @@ When I visit the adoption page:
 * When I am not at the beginning of the line, I cannot see an option to adopt a pet.
 * For demo purposes: Once I join the line, I can see other pets being adopted until I am at the front of the line.               * Every five seconds, the user at the front of the line should be removed from the line and one of the pets up for adoption should disappear.
   * When I am at the front of the line, a new user should be added to the line behind me every five seconds until there are a total of five users in line.
-USER STORY #5:
+
+
+##USER STORY #5:
+
+
 As a user interested in adopting pets, I want to adopt a pet.
 
 Acceptance criteria
