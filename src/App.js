@@ -1,61 +1,43 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
-
-import HomePage from './HomePage';
-import AdoptionPage from './AdoptionPage';
-
-import ApiServices from './ApiServices';
-
-import '../src/index.css';
+// import logo from './logo.svg';
+import { Route } from 'react-router-dom'
+import LandingPage from './routes/LandingPage/LandingPage'
+import AdoptPage from './routes/AdoptPage/AdoptPage'
 
 
-class App extends React.Component {
+import './App.css';
 
-    state = {
-        queue: [], 
-        person: '',
-    }
+export default class App extends React.Component {
+  
+mainRoutes (){
+  return (
+    <>
+      <Route 
+      exact
+      key ='/'
+      path='/'
+      component = {LandingPage}
+    />
 
-    setPerson = (person) => {
-        this.setState({ person: person })
-    }
 
-    render() {
-
-        let peopleList 
-            
-        if(this.state.queue[0] === this.state.person) {
-            peopleList = true;
-        } else {
-            peopleList = false;
-        }
-
-        ApiServices.getQueue()
-        .then((list) => this.setState({ queue: list }));
-
-        return(
-            <div className='app'>
-                <Switch>
-                    <Route 
-                        exact path='/' 
-                        render={
-                            () => <HomePage 
-                                    setPerson={this.setPerson} />
-                        } 
-                    />
-
-                    <Route 
-                        path='/adopt' 
-                        render={
-                            () => <AdoptionPage 
-                                    adopt={peopleList} 
-                                    queue={this.state.queue} />
-                        }
-                    />
-                </Switch>
-            </div>
-        );
-    }
+    <Route 
+      exact
+      key ='/adopt'
+      path ='/adopt'
+      component = {AdoptPage}
+    />
+    </>
+  )
 }
+ 
+render(){
+  return (
+    <div className="App">
+      <main className = 'App_main'>
+        {this.mainRoutes()}
+      </main>
+    </div>
+  );
+  }
 
-export default App;
+}
