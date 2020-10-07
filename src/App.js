@@ -1,43 +1,59 @@
 import React from 'react';
 // import logo from './logo.svg';
-import { Route } from 'react-router-dom'
-import LandingPage from './routes/LandingPage/LandingPage'
-import AdoptPage from './routes/AdoptPage/AdoptPage'
+import { Route, Switch } from 'react-router-dom';
+import LandingPage from './routes/LandingPage/LandingPage';
+import AdoptPage from './routes/AdoptPage/AdoptPage';
+import ApiServices from './ApiServices';
 
 
 import './App.css';
 
-export default class App extends React.Component {
-  
-mainRoutes (){
-  return (
-    <>
-      <Route 
-      exact
-      key ='/'
-      path='/'
-      component = {LandingPage}
-    />
+class App extends React.Component {
 
+  state = {
+    queue: [],
+    person: '',
+    
+    setPerson = (person) => {
+        this.setState({ person: person })
+    }
 
-    <Route 
-      exact
-      key ='/adopt'
-      path ='/adopt'
-      component = {AdoptPage}
-    />
-    </>
-  )
+    render() {
+
+        let peopleList 
+            
+        if(this.state.queue[0] === this.state.person) {
+            peopleList = true;
+        } else {
+            peopleList = false;
+        }
+
+        ApiServices.getQueue()
+        .then((list) => this.setState({ queue: list }));
+
+        return(
+            <div className='app'>
+                <Switch>
+                    <Route 
+                        exact path='/' 
+                        render={
+                            () => <LandingPage 
+                                    setPerson={this.setPerson} />
+                        } 
+                    />
+
+                    <Route 
+                        path='/adopt' 
+                        render={
+                            () => <AdoptionPage 
+                                    adopt={peopleList} 
+                                    queue={this.state.queue} />
+                        }
+                    />
+                </Switch>
+            </div>
+        );
+    }
 }
- 
-render(){
-  return (
-    <div className="App">
-      <main className = 'App_main'>
-        {this.mainRoutes()}
-      </main>
-    </div>
-  );
-  }
 
-}
+export default App;
