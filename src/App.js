@@ -13,7 +13,7 @@ class App extends React.Component {
   state = {
     queue: [],
     person: '',
-    
+  }
     setPerson = (person) => {
         this.setState({ person: person })
     }
